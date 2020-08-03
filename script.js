@@ -2,7 +2,7 @@ const tabItems = document.querySelectorAll(".tab-item");
 const tabContentItems = document.querySelectorAll(".tab-content-item");
 
 // Select tab content item
-function selectItem(e) {
+const selectItem = (e) => {
   // Remove all show and border classes
   removeBorder();
   removeShow();
@@ -15,14 +15,14 @@ function selectItem(e) {
 }
 
 // Remove bottom borders from all tab items
-function removeBorder() {
+const removeBorder = () => {
   tabItems.forEach((item) => {
     item.classList.remove("tab-border");
   });
 }
 
 // Remove show class from all content items
-function removeShow() {
+const removeShow = () => {
   tabContentItems.forEach((item) => {
     item.classList.remove("show");
   });
